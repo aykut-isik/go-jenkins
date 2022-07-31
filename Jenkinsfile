@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                echo 'build calisti'
+               sh 'docker build -t first-build .'
             }
         }
     }
